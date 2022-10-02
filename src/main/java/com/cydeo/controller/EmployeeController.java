@@ -22,8 +22,8 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    @GetMapping("/register")
-    public String createEmployee(Model model){
+    @GetMapping("/register")//end pointer
+    public String createEmployee(Model model){//create a methode and add @GetMapping annotation and after create html file
 
         model.addAttribute("employee", new Employee());
         model.addAttribute("stateList", DataGenerator.getAllStates());
